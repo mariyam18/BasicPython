@@ -1,0 +1,169 @@
+codept@aiktc04 ~ $ musql -u root -p
+No command 'musql' found, did you mean:
+ Command 'mysql' from package 'mariadb-client-core-10.0' (universe)
+ Command 'mysql' from package 'mysql-client-core-5.7' (main)
+ Command 'iusql' from package 'unixodbc' (main)
+musql: command not found
+codept@aiktc04 ~ $ mysql -u root -p
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 4
+Server version: 5.7.17-0ubuntu0.16.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2016, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> create database college;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> show databases
+    -> ;
++-----------------------+
+| Database              |
++-----------------------+
+| information_schema    |
+| Banking               |
+| Banking1              |
+| Batch_1               |
+| Car_Insurance_15CO    |
+| Car_Insurance_15CO31  |
+| Data                  |
+| banking               |
+| car_insurance_16DC074 |
+| college               |
+| data                  |
+| mydb                  |
+| mysql                 |
+| owncloud              |
+| performance_schema    |
+| phpmyadmin            |
+| sys                   |
+| teamb4                |
+| temp                  |
+| tempB1                |
+| university            |
++-----------------------+
+21 rows in set (0.13 sec)
+
+mysql> create table student()
+    -> create table student;)
+ERROR 1046 (3D000): No database selected
+    -> create table student(name varchar (200), rollno varchar (100), marks int(3),attendance int (3));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+create table student(name varchar (200), rollno varchar (100), marks int(3),at' at line 1
+mysql> use database college
+ERROR 1049 (42000): Unknown database 'database'
+mysql> use college
+Database changed
+mysql> ) create table student(name varchar (200), rollno varchar (100), marks int(3),attendance int (3));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') create table student(name varchar (200), rollno varchar (100), marks int(3),at' at line 1
+mysql> ) create table student(name varchar (200), rollno varchar (100), marks int(3),attendance int (3));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') create table student(name varchar (200), rollno varchar (100), marks int(3),at' at line 1
+mysql>  create table college(name varchar (200), rollno varchar (100), marks int(3),attendance int (3));
+Query OK, 0 rows affected (0.42 sec)
+
+mysql> show table
+    -> show databases
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show databases' at line 2
+mysql> show table show databases;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show databases' at line 1
+mysql> desc college;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| name       | varchar(200) | YES  |     | NULL    |       |
+| rollno     | varchar(100) | YES  |     | NULL    |       |
+| marks      | int(3)       | YES  |     | NULL    |       |
+| attendance | int(3)       | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> desc school
+    -> ;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| name       | varchar(200) | YES  |     | NULL    |       |
+| rollno     | varchar(100) | YES  |     | NULL    |       |
+| marks      | int(3)       | YES  |     | NULL    |       |
+| attendance | int(3)       | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
+
+mysql> desc school;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| name       | varchar(200) | YES  |     | NULL    |       |
+| rollno     | varchar(100) | YES  |     | NULL    |       |
+| marks      | int(3)       | YES  |     | NULL    |       |
+| attendance | int(3)       | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql>  show tables
+    -> ;
++-------------------+
+| Tables_in_college |
++-------------------+
+| SCHOOL            |
+| college           |
+| school            |
++-------------------+
+3 rows in set (0.00 sec)
+
+mysql> desc SCHOOL
+    -> ;
++------------+----------+------+-----+---------+-------+
+| Field      | Type     | Null | Key | Default | Extra |
++------------+----------+------+-----+---------+-------+
+| FIRST_NAME | char(20) | YES  |     | NULL    |       |
+| LAST_NAME  | char(10) | YES  |     | NULL    |       |
+| AGE        | int(11)  | YES  |     | NULL    |       |
+| SEX        | char(1)  | YES  |     | NULL    |       |
++------------+----------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> desc SCHOOL
+    -> ;
++------------+----------+------+-----+---------+-------+
+| Field      | Type     | Null | Key | Default | Extra |
++------------+----------+------+-----+---------+-------+
+| FIRST_NAME | char(20) | YES  |     | NULL    |       |
+| LAST_NAME  | char(10) | YES  |     | NULL    |       |
+| AGE        | int(11)  | YES  |     | NULL    |       |
+| SEX        | char(1)  | YES  |     | NULL    |       |
++------------+----------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> select *from SCHOOL;
+Empty set (0.00 sec)
+
+mysql> select *from SCHOOL;
+Empty set (0.00 sec)
+
+mysql> select *from SCHOOL;
++------------+-----------+------+------+
+| FIRST_NAME | LAST_NAME | AGE  | SEX  |
++------------+-----------+------+------+
+| MAC        | MOHAN     |   20 | M    |
++------------+-----------+------+------+
+1 row in set (0.00 sec)
+
+mysql> select *from SCHOOL;
++------------+-----------+------+------+
+| FIRST_NAME | LAST_NAME | AGE  | SEX  |
++------------+-----------+------+------+
+| MAC        | MOHAN     |   20 | M    |
+| MARIYAM    | SHAIKH    |   19 | F    |
++------------+-----------+------+------+
+2 rows in set (0.00 sec)
+
+mysql> 
+

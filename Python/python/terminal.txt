@@ -1,0 +1,512 @@
+codept@aiktc04 ~/Desktop $ python3 f1.py
+  File "f1.py", line 5
+    self.foo[]
+             ^
+SyntaxError: invalid syntax
+codept@aiktc04 ~/Desktop $ python3 f1.py
+Traceback (most recent call last):
+  File "f1.py", line 10, in <module>
+    t2.foo.append(3)
+NameError: name 't2' is not defined
+codept@aiktc04 ~/Desktop $ python3 f1.py
+Traceback (most recent call last):
+  File "f1.py", line 10, in <module>
+    b2.foo.append(3)
+AttributeError: 'Test' object has no attribute 'foo'
+codept@aiktc04 ~/Desktop $ python3 f1.py
+Traceback (most recent call last):
+  File "f1.py", line 11, in <module>
+    print(t2.foo)
+NameError: name 't2' is not defined
+codept@aiktc04 ~/Desktop $ python3 f1.py
+[2]
+codept@aiktc04 ~/Desktop $ python3 f1.py
+[2]
+[3]
+Traceback (most recent call last):
+  File "f1.py", line 15, in <module>
+    print(id(t1.foo))
+NameError: name 't1' is not defined
+codept@aiktc04 ~/Desktop $ python3 f1.py
+[2]
+[3]
+140683463774152
+140683463773768
+codept@aiktc04 ~/Desktop $ python3 f1.py
+Traceback (most recent call last):
+  File "f1.py", line 8, in <module>
+    b1.add()            #here __init__() function is not there so calling is done
+AttributeError: 'Test' object has no attribute 'add'
+codept@aiktc04 ~/Desktop $ python3 f1.py
+[2]
+[3]
+139876943806408
+139876943806024
+codept@aiktc04 ~/Desktop $ python3 f1.py
+[2]
+[3]
+140003356741576
+140003356741192
+codept@aiktc04 ~/Desktop $ python3 f1.py
+[2]
+[3]
+140452319981512
+140452319981128
+codept@aiktc04 ~/Desktop $ python3 f2.py
+Traceback (most recent call last):
+  File "f2.py", line 9, in <module>
+    Test.add(b1,1)
+  File "f2.py", line 5, in add
+    self.foo=[]
+NameError: name 'self' is not defined
+codept@aiktc04 ~/Desktop $ python3 f2.py
+<__main__.Test object at 0x7f8a75987470>
+codept@aiktc04 ~/Desktop $ python3 f2.py
+1
+codept@aiktc04 ~/Desktop $ python3 f2.py
+133 456 567
+codept@aiktc04 ~/Desktop $ python3 f2.py
+133 456 hi
+codept@aiktc04 ~/Desktop $ python3 f2.py
+  File "f2.py", line 6
+    print(b,,c,d)
+            ^
+SyntaxError: invalid syntax
+codept@aiktc04 ~/Desktop $ python3 f2.py
+133 
+ 456 hi
+codept@aiktc04 ~/Desktop $ python3 f2.py
+[133, 456, 'hi', 'hello']
+codept@aiktc04 ~/Desktop $ python3 f2.py
+[133, 456, 'hi', 'hello']
+codept@aiktc04 ~/Desktop $ python3 f3.py
+  File "f3.py", line 1
+    class Test
+             ^
+SyntaxError: invalid syntax
+codept@aiktc04 ~/Desktop $ python3 f3.py
+  File "f3.py", line 3
+    a.foo[]
+          ^
+SyntaxError: invalid syntax
+codept@aiktc04 ~/Desktop $ python3 f3.py
+  File "f3.py", line 3
+    a.foo[]
+          ^
+SyntaxError: invalid syntax
+codept@aiktc04 ~/Desktop $ python3 f3.py
+Traceback (most recent call last):
+  File "f3.py", line 10, in <module>
+    Test.add(b1,[1,2,3,4,5])
+  File "f3.py", line 6, in add
+    temp=b[i]
+IndexError: list index out of range
+codept@aiktc04 ~/Desktop $ python3 f3.py
+  File "f3.py", line 4
+    for i in (0:5+1:)
+               ^
+SyntaxError: invalid syntax
+codept@aiktc04 ~/Desktop $ python3 f3.py
+  File "f3.py", line 4
+    for i in (0,5+1,)
+                    ^
+SyntaxError: invalid syntax
+codept@aiktc04 ~/Desktop $ python3 f3.py
+  File "f3.py", line 4
+    for i in (0,5+1,1)
+                     ^
+SyntaxError: invalid syntax
+codept@aiktc04 ~/Desktop $ python3 f3.py
+Traceback (most recent call last):
+  File "f3.py", line 10, in <module>
+    Test.add(b1,[1,2,3,4,5])
+  File "f3.py", line 6, in add
+    temp=b[i]
+IndexError: list index out of range
+codept@aiktc04 ~/Desktop $ python3 f3.py
+10
+codept@aiktc04 ~/Desktop $ python3 f1.py
+  File "f1.py", line 7
+    b1=Test()
+    ^
+IndentationError: expected an indented block
+codept@aiktc04 ~/Desktop $ python3 f1.py
+2
+2
+Traceback (most recent call last):
+  File "f1.py", line 12, in <module>
+    b1.foo.append(2)
+AttributeError: 'Test' object has no attribute 'foo'
+codept@aiktc04 ~/Desktop $ 
+codept@aiktc04 ~/Desktop $ python3 f1.py
+2
+2
+codept@aiktc04 ~/Desktop $ python3 f4.py
+  File "f4.py", line 3
+    def add(a)
+             ^
+SyntaxError: invalid syntax
+codept@aiktc04 ~/Desktop $ python3 f4.py
+Traceback (most recent call last):
+  File "f4.py", line 5, in <module>
+    Test.add()
+  File "f4.py", line 4, in add
+    print("i am here",ab)
+NameError: name 'ab' is not defined
+codept@aiktc04 ~/Desktop $ python3 f4.py
+i am here <class '__main__.Test'>
+codept@aiktc04 ~/Desktop $ python3 f4.py
+hello
+i am here <class '__main__.Test'>
+: command not foundsktop $ ^[[A
+codept@aiktc04 ~/Desktop $ python3 f5.py
+hello
+Traceback (most recent call last):
+  File "f5.py", line 7, in <module>
+    Test.add()
+TypeError: add() missing 1 required positional argument: 'a'
+codept@aiktc04 ~/Desktop $ python3 f5.py
+hello
+i am here
+codept@aiktc04 ~/Desktop $ python3 f5.py
+hello
+Traceback (most recent call last):
+  File "f5.py", line 8, in <module>
+    b1.add()
+NameError: name 'b1' is not defined
+codept@aiktc04 ~/Desktop $ python3 f5.py
+hello
+i am here
+codept@aiktc04 ~/Desktop $ python3 f5.py
+hello
+i am here
+i am here
+codept@aiktc04 ~/Desktop $ python3 f5.py
+hello
+i am here
+codept@aiktc04 ~/Desktop $ python3 f5.py
+hello
+i am here
+codept@aiktc04 ~/Desktop $ python3 f6.py
+  File "f6.py", line 5
+    def raise(salary)
+            ^
+SyntaxError: invalid syntax
+codept@aiktc04 ~/Desktop $ python3 f6.py
+  File "f6.py", line 5
+    def raise(salary):
+            ^
+SyntaxError: invalid syntax
+codept@aiktc04 ~/Desktop $ python3 f6.py
+  File "f6.py", line 5
+    def raise(salary):
+            ^
+SyntaxError: invalid syntax
+codept@aiktc04 ~/Desktop $ python3 f6.py
+  File "f6.py", line 5
+    def raise(salary):
+            ^
+SyntaxError: invalid syntax
+codept@aiktc04 ~/Desktop $ python3 f6.py
+  File "f6.py", line 13
+    q=raise(salary)
+          ^
+SyntaxError: invalid syntax
+codept@aiktc04 ~/Desktop $ python3 f6.py
+  File "f6.py", line 13
+    q=raise(salary)
+          ^
+SyntaxError: invalid syntax
+codept@aiktc04 ~/Desktop $ python3 f6.py
+Enter the name of employee:mariyam
+Enter the Email addressmariyam@gmail.com
+Enter the salary2000
+name of employee= mariyam 
+ email= mariyam@gmail.com 
+salary= 2000
+Traceback (most recent call last):
+  File "f6.py", line 13, in <module>
+    q=increase(salary)
+NameError: name 'increase' is not defined
+codept@aiktc04 ~/Desktop $ python3 f6.py
+  File "f6.py", line 6
+    return salary*0.4
+         ^
+IndentationError: expected an indented block
+codept@aiktc04 ~/Desktop $ 
+codept@aiktc04 ~/Desktop $ python3 f6.py
+Enter the name of employee:m
+Enter the Email addresshk
+Enter the salary78
+name of employee= m 
+ email= hk 
+salary= 78
+Traceback (most recent call last):
+  File "f6.py", line 13, in <module>
+    q=increase(salary)
+NameError: name 'increase' is not defined
+codept@aiktc04 ~/Desktop $ python3 f6.py
+Enter the name of employee:n
+Enter the Email addressj
+Enter the salary90
+name of employee= n 
+ email= j 
+salary= 90
+Traceback (most recent call last):
+  File "f6.py", line 13, in <module>
+    q.increase(salary)
+NameError: name 'q' is not defined
+codept@aiktc04 ~/Desktop $ python3 f6.py
+Enter the name of employee:l
+Enter the Email addressk
+Enter the salary9
+name of employee= l 
+ email= k 
+salary= 9
+Traceback (most recent call last):
+  File "f6.py", line 13, in <module>
+    q=b1.increase(salary)
+AttributeError: 'Employee' object has no attribute 'increase'
+codept@aiktc04 ~/Desktop $ python3 f6.py
+Enter the name of employee:l
+Enter the Email addressk
+Enter the salary0
+name of employee= l 
+ email= k 
+salary= 0
+Traceback (most recent call last):
+  File "f6.py", line 13, in <module>
+    q=b1.increase(salary)
+TypeError: increase() takes 1 positional argument but 2 were given
+codept@aiktc04 ~/Desktop $ python3 f6.py
+Enter the name of employee:
+Enter the Email address
+Enter the salary78
+name of employee=  
+ email=  
+salary= 78
+Traceback (most recent call last):
+  File "f6.py", line 14, in <module>
+    q=b1.increase(salary)
+  File "f6.py", line 7, in increase
+    return salary*0.4
+TypeError: can't multiply sequence by non-int of type 'float'
+codept@aiktc04 ~/Desktop $ python3 f6.py
+Enter the name of employee:ma
+Enter the Email addressgh
+Enter the salary100000
+name of employee= ma 
+ email= gh 
+salary= 100000
+Traceback (most recent call last):
+  File "f6.py", line 14, in <module>
+    q=b1.increase(salary)
+  File "f6.py", line 7, in increase
+    return salary*0.4
+TypeError: can't multiply sequence by non-int of type 'float'
+codept@aiktc04 ~/Desktop $ python3 f6.py
+Enter the name of employee:g
+Enter the Email addressg
+Enter the salary2000
+name of employee= g 
+ email= g 
+salary= 2000
+Traceback (most recent call last):
+  File "f6.py", line 14, in <module>
+    q=b1.increase(salary)
+  File "f6.py", line 7, in increase
+    return salary*(40/100)
+TypeError: can't multiply sequence by non-int of type 'float'
+codept@aiktc04 ~/Desktop $ python3 f6.py
+Enter the name of employee:gh
+Enter the Email addressfg
+Enter the salary90000
+name of employee= gh 
+ email= fg 
+salary= 90000
+36000.0
+codept@aiktc04 ~/Desktop $ python3 f6.py
+Enter the name of employee:mariyam
+Enter the Email address:mariyam@gmail.com
+Enter the salary=90000
+name of employee= mariyam 
+ email= mariyam@gmail.com 
+salary= 90000
+increase salary= 36000.0
+codept@aiktc04 ~/Desktop $ python3 f6.py
+Enter the name of employee:mariyam
+Enter the Email address:mariyam@gmail.com
+Enter the salary=9000
+Name of employee= mariyam 
+Email= mariyam@gmail.com 
+Salary= 9000
+increase salary= 3600.0
+codept@aiktc04 ~/Desktop $ python3 f7.py
+  File "f7.py", line 10
+    for i in range(1,2,1)
+                        ^
+SyntaxError: invalid syntax
+codept@aiktc04 ~/Desktop $ python3 f7.py
+  File "f7.py", line 11
+    name=input("Enter the name of employee:")
+       ^
+IndentationError: expected an indented block
+codept@aiktc04 ~/Desktop $ python3 f7.py
+Enter the name of employee:mariyam
+Enter the Email address:m@gmail.com
+Enter the salary=9000
+
+**Record**
+
+Name of employee= mariyam 
+Email= m@gmail.com 
+Salary= 9000
+increase salary= 3600.0
+codept@aiktc04 ~/Desktop $ python3 f7.py
+Enter the name of employee:m.sk
+Enter the Email address:m.shaikh
+Enter the salary=90000
+Enter the name of employee:skhan
+Enter the Email address:khan.m
+Enter the salary=5000
+
+**Record**
+
+Name of employee= skhan 
+Email= khan.m 
+Salary= 5000
+increase salary= 2000.0
+codept@aiktc04 ~/Desktop $ python3 f7.py
+  File "f7.py", line 4
+    for i in range(0,2,1)
+                        ^
+SyntaxError: invalid syntax
+codept@aiktc04 ~/Desktop $ python3 f7.py
+  File "f7.py", line 5
+    print("\n**Record**\n")
+        ^
+IndentationError: expected an indented block
+codept@aiktc04 ~/Desktop $ python3 f7.py
+Enter the name of employee:k
+Enter the Email address:l
+Enter the salary=90000
+Enter the name of employee:jk
+Enter the Email address:hjh
+Enter the salary=5000
+
+**Record**
+
+Name of employee= jk 
+Email= hjh 
+Salary= 5000
+
+**Record**
+
+Name of employee= jk 
+Email= hjh 
+Salary= 5000
+increase salary= 2000.0
+codept@aiktc04 ~/Desktop $ python3 f7.py
+enrtedev1
+Enter the name of employee:jhg
+Enter the Email address:gjgj
+Enter the salary=75
+
+**Record**
+
+Name of employee= jhg 
+Email= gjgj 
+Salary= 75
+
+**Record**
+
+Name of employee= jhg 
+Email= gjgj 
+Salary= 75
+enrteh
+Enter the name of employee:q
+Enter the Email address:^[[A
+Enter the salary=
+Traceback (most recent call last):
+  File "f7.py", line 15, in <module>
+    b1 = Employee(name,email,salary)
+ValueError: invalid literal for int() with base 10: ''
+codept@aiktc04 ~/Desktop $ python3 f7.py
+Enter the name of employee:ma
+Enter the Email address:kl
+Enter the salary=8000
+
+**Record**
+
+Name of employee= ma 
+Email= kl 
+Salary= 8000
+Enter the name of employee:jkjk
+Enter the Email address:jjh
+Enter the salary=47577
+
+**Record**
+
+Name of employee= jkjk 
+Email= jjh 
+Salary= 47577
+increase salary= 19030.8
+codept@aiktc04 ~/Desktop $ python3 f7.py
+  File "f7.py", line 9
+    return salary*(40/100)
+         ^
+IndentationError: expected an indented block
+codept@aiktc04 ~/Desktop $ 
+codept@aiktc04 ~/Desktop $ python3 f7.py
+Enter the name of employee:kl
+Enter the Email address:kj
+Enter the salary=3146
+
+**Record**
+
+Name of employee= kl 
+Email= kj 
+Salary= 3146
+Enter the name of employee:ckl
+Enter the Email address:l
+Enter the salary=c
+Traceback (most recent call last):
+  File "f7.py", line 14, in <module>
+    salary=int(input("Enter the salary="))
+ValueError: invalid literal for int() with base 10: 'c'
+codept@aiktc04 ~/Desktop $ python3 f7.py
+Enter the name of employee:jk
+Enter the Email address:hj
+Enter the salary=124765
+
+**Record**
+
+Name of employee= jk 
+Email= hj 
+Salary= 124765
+Traceback (most recent call last):
+  File "f7.py", line 16, in <module>
+    q=b1.increase(salary)
+AttributeError: 'Employee' object has no attribute 'increase'
+codept@aiktc04 ~/Desktop $ python3 f8.py
+  File "f8.py", line 4
+    a=inherit()
+              ^
+IndentationError: unindent does not match any outer indentation level
+codept@aiktc04 ~/Desktop $ python3 f8.py
+Traceback (most recent call last):
+  File "f8.py", line 5, in <module>
+    a.foo()
+TypeError: foo() missing 1 required positional argument: 'x'
+codept@aiktc04 ~/Desktop $ python3 f8.py
+in foo <__main__.inherit object at 0x7fb5d54a1588>
+in foo <__main__.inherit2 object at 0x7fb5d54a15c0>
+in hoo <__main__.inherit2 object at 0x7fb5d54a15c0>
+in class main
+codept@aiktc04 ~/Desktop $ python3 f8.py
+in foo 1 <__main__.inherit object at 0x7fb3e4190588>
+in foo 1 <__main__.inherit2 object at 0x7fb3e41905c0>
+in hoo 1 <__main__.inherit2 object at 0x7fb3e41905c0>
+in class main
+codept@aiktc04 ~/Desktop $ 
+
