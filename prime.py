@@ -1,8 +1,16 @@
-n=int(input("Enter the no.:\n"))
+lower=int(input("Enter the  1st no.:\n"))
+high=int(input("Enter the  2nd no.:\n"))
 
-for i in range(2,n):
-	if(n%i==0):
-		print("Not a prime no.")
-		break
-if(i==n-1):
-	print("prime no.")
+
+
+
+print("Prime numbers between", lower, "and", high, "are:")
+
+for num in range(lower, high + 1):
+   # all prime numbers are greater than 1
+   if num > 1:
+       for i in range(2, num):
+           if (num % i) == 0:
+               break
+       else:
+           print(num)
