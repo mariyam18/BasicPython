@@ -1,4 +1,5 @@
-n=int(input("Enter the no."))
-for i in range(1,n+1):
-	print(i)
+number=int(input("Enter the no."))
+for i in range(1,number+1):
+	print("natural number are",i)
+	
 	

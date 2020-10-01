@@ -6,4 +6,11 @@ for i in range(5,0,-1):
 		print(end=" ")
 	for j in range(i):
 		print("*",end=" ")
-	print()
+	print("")
+
+rows = 6
+for num in range(rows):
+    for i in range(num):
+        print(num, end=" ")  # print number
+    # line after each row to display pattern correctly
+    print("")
